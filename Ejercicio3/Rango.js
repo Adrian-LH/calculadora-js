@@ -1,17 +1,18 @@
 const numero100 = parseInt(prompt("Introduzca un numero: "));
 
-const max = 20;
+const min = parseInt(prompt("Introduzca un numero minimo: "));
 
-const min = 10;
+const max = parseInt(prompt("Introduzca un numero maximo: "));
 
 function rango(min,max,numero100){
-    if(min <= numero100 && max >= numero100){
-        alert("El numero esta en el rango")
-    }
-    else{
-        alert("El numero no esta en el rango")
-    }
+    return(numero100 >= min && numero100 <= max)
 }
 
-rango()
+if(rango(min,max,numero100)){
+    alert("El numero esta en el rango")
+}
+else{
+    alert("El numero no esta en el rango")
+}
+
    
